@@ -1,0 +1,222 @@
+*,*::after,*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.toolbar {
+    display: flex;
+    justify-content: center;
+}
+
+.toolbar-wrapper {
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-evenly;
+    width: 40%;
+}
+
+.toolbar-img {
+    width: 150px;
+}
+
+.toolbar-searchbar {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.toolbar-input {
+    font-size: 15px;
+    padding: 8px 180px 8px 8px;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid black;
+    margin-right: 10px;
+}
+
+.toolbar-btn {
+    border: none;
+    background-color: rgb(122, 122, 255);
+    color: white;
+    padding: 10px 30px;
+    border-radius: 5px;
+    cursor: pointer;
+    outline: none;
+}
+
+/* toolbar end main start*/
+
+.main {
+    justify-content: center;
+}
+
+.list-wrapper {
+    display: flex;
+    justify-content: center;
+    height: 560px;
+}
+.list {
+    list-style-type: none;
+}
+
+.list li {
+    margin: 20px;
+}
+
+.non-active-btn {
+    padding: 5px;
+    background-color: white;
+    color: black;
+    cursor: pointer;
+    border: 1px black solid;
+    border-radius: 5px;
+    margin: 5px;
+    outline: none;
+    transition: 200ms ease-out;
+}
+
+.btn-wrapper div button:hover {
+    background-color: rgb(122, 122, 255);
+    color: white;
+    border: 1px solid rgb(122, 122, 255);
+}
+
+.active-btn {
+    padding: 5px;
+    background-color: rgb(122, 122, 255);
+    color: white;
+    cursor: pointer;
+    border: 1px black solid;
+    border-radius: 5px;
+    margin: 5px;
+    outline: none;
+    transition: 200ms ease-out;
+}
+
+.btn-wrapper div {
+    display: flex;
+    justify-content: center;
+}
+
+
+.order-btn {
+    background-color: white;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    outline: none;
+}
+
+.hidden-btn-wrapper {
+    height: 130px;
+    transition: 200ms;
+    cursor: pointer;
+    border-radius: 5px;
+    border: 1px solid grey;
+    padding: 10px;
+    position: absolute;
+    top: 120px;
+    right: 37%;
+}
+
+.hidden-btn {
+    display: none;
+    cursor: pointer;
+    border: none;
+}
+.updown-btn {
+    cursor: pointer;
+    background-color: white;
+    outline: none;
+    border: none;
+    margin: 5px;
+    transition: 300ms;
+}
+
+.updown-btn:hover {
+    background-color: rgb(219, 219, 219);
+}
+
+.list-item {
+    color: rgb(71, 71, 71);
+    border-bottom: 1px solid gray;
+    transition: 200ms;
+    
+}
+.list-item:hover {
+    background-color: rgb(194, 194, 194);
+}
+
+.point {
+    background-color: white;
+    border: none;
+}
+
+.nextprevBtn {
+    outline: none;
+    cursor: pointer;
+}
+
+@media screen and (min-width:976px) and (max-width: 1515px) {
+
+    .hidden-btn-wrapper {
+        right: 30%;
+    }
+  }
+
+@media screen and (min-width:500px) and (max-width: 975px) {
+
+    .hidden-btn-wrapper {
+        right: 10%;
+    }
+  }
+
+  
+@media screen and (min-width:500px) and  (max-width: 650px) {
+
+    .toolbar-img {
+        width: 80px;
+    }
+    .toolbar-input {
+        padding: 5px 20px 5px 5px;
+    }
+
+    .toolbar-btn {
+        padding: 10px 10px;   
+    }
+}
+@media screen and (min-width:1px) and  (max-width: 499px) {
+
+    .toolbar-img {
+        margin-left: 50px;
+        width: 90px;
+    }
+    .toolbar-input {
+        padding: 5px 10px 5px 5px;
+    }
+
+    .toolbar-btn {
+        padding: 7px 7px;   
+    }
+
+    .hidden-btn-wrapper {
+        right: -10%;
+    }
+
+    .btn-wrapper {
+        margin-left: 20px;
+        justify-content: center;
+    }
+
+    .btn-wrapper div button {
+        margin-left: 1px;
+        padding: 2px;
+    }
+
+    .nextprevBtn {
+        font-size: 10px;
+    }
+}
